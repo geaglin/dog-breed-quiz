@@ -3,7 +3,7 @@ import CockapooLogo from './CockapooLogo';
 
 export default function Result({ result, onRetake }) {
   const { breed, matchScore } = result;
-  const [imageUrl, setImageUrl] = useState(null);
+  const [imageUrl, setImageUrl] = useState(breed.localImage || null);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [revealed, setRevealed] = useState(false);
 
@@ -21,7 +21,7 @@ export default function Result({ result, onRetake }) {
         }
       })
       .catch(() => {
-        // Fallback — no image
+        // Local image is already set as fallback
       });
   }, [breed.apiBreed]);
 
