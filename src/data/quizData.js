@@ -137,6 +137,7 @@ export const breeds = [
     name: "Golden Retriever",
     apiBreed: "retriever/golden",
     localImage: "/dogs/golden-retriever.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/d_dNvBD0R.jpg",
     description:
       "You're the Golden Retriever of people — warm, loyal, and the kind of person everyone wants at their party. You light up a room with your genuine friendliness and have an almost supernatural ability to make people feel welcome. Your loyalty runs deep, and your friends know they can count on you no matter what.",
     traits: ["Loyal", "Social", "Friendly", "Energetic", "People-pleaser"],
@@ -147,6 +148,7 @@ export const breeds = [
     name: "Border Collie",
     apiBreed: "collie/border",
     localImage: "/dogs/border-collie.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/BkE6Wg5E7.jpg",
     description:
       "You're a Border Collie — the brilliant overachiever of the personality world. Your mind is always running, always solving, always optimizing. You thrive on challenges and get restless without mental stimulation. People are amazed by how quickly you pick things up and how much you can get done in a day.",
     traits: ["Intelligent", "Driven", "Focused", "Energetic", "Problem-solver"],
@@ -157,6 +159,7 @@ export const breeds = [
     name: "Labrador Retriever",
     apiBreed: "labrador",
     localImage: "/dogs/labrador.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/hd5tL4zFqW.jpg",
     description:
       "You're a Lab! Life is your playground, and everyone's invited. You approach every day with infectious enthusiasm and genuine joy. You're the friend who suggests the group activity, brings the snacks, and makes sure nobody's left out. Your playfulness is your superpower.",
     traits: ["Playful", "Social", "Enthusiastic", "Loyal", "Fun-loving"],
@@ -167,6 +170,7 @@ export const breeds = [
     name: "German Shepherd",
     apiBreed: "german/shepherd",
     localImage: "/dogs/german-shepherd.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/-qOqBA-Un.jpg",
     description:
       "You're a German Shepherd — fiercely protective, deeply loyal, and impressively capable. You take your responsibilities seriously and the people in your inner circle know they have an unwavering guardian. You might seem intimidating to strangers, but those who earn your trust discover a deeply devoted companion.",
     traits: ["Protective", "Loyal", "Brave", "Disciplined", "Devoted"],
@@ -177,6 +181,7 @@ export const breeds = [
     name: "Siberian Husky",
     apiBreed: "husky",
     localImage: "/dogs/husky.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/T3mbY3ZONG.jpg",
     description:
       "You're a Husky — independent, adventurous, and absolutely unstoppable when you set your mind on something. You march to the beat of your own drum and have an energy that's both impressive and slightly exhausting to those around you. Freedom is your love language.",
     traits: ["Independent", "Adventurous", "Energetic", "Free-spirited", "Vocal"],
@@ -187,6 +192,7 @@ export const breeds = [
     name: "Poodle",
     apiBreed: "poodle/standard",
     localImage: "/dogs/poodle.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/HJq5ke5Nm.jpg",
     description:
       "You're a Poodle — far more than meets the eye. Behind your polished exterior is one of the sharpest minds in the room. You're elegant, witty, and adaptable. You can hold court at a gala or curl up with a complex novel, and you excel at both. Don't let anyone underestimate you.",
     traits: ["Intelligent", "Elegant", "Adaptable", "Witty", "Refined"],
@@ -197,6 +203,7 @@ export const breeds = [
     name: "Beagle",
     apiBreed: "beagle",
     localImage: "/dogs/beagle.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/CVbP_4N2Z.jpg",
     description:
       "You're a Beagle — curious, cheerful, and always following your nose toward the next adventure. You have an insatiable curiosity that leads you to the most interesting discoveries. You're great company, easy to get along with, and you bring a lighthearted energy wherever you go.",
     traits: ["Curious", "Cheerful", "Friendly", "Adventurous", "Easy-going"],
@@ -207,6 +214,7 @@ export const breeds = [
     name: "Shiba Inu",
     apiBreed: "shiba",
     localImage: "/dogs/shiba-inu.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/eXOAOSOt9e.jpg",
     description:
       "You're a Shiba Inu — confident, independent, and delightfully particular about everything. You have exquisite taste and high standards, and you're not afraid to walk away from anything that doesn't meet them. You're selective about your inner circle, but incredibly devoted to those who make the cut.",
     traits: ["Independent", "Confident", "Selective", "Clean", "Bold"],
@@ -217,6 +225,7 @@ export const breeds = [
     name: "Pembroke Welsh Corgi",
     apiBreed: "corgi/cardigan",
     localImage: "/dogs/corgi.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/SkJj7e547.jpg",
     description:
       "You're a Corgi — small in stature but enormous in personality. You're surprisingly bold, endlessly entertaining, and way more athletic than people expect. You've got a natural authority about you and a sense of humor that keeps everyone on their toes. Never underestimate a Corgi person.",
     traits: ["Bold", "Entertaining", "Loyal", "Spirited", "Surprising"],
@@ -227,6 +236,7 @@ export const breeds = [
     name: "Great Dane",
     apiBreed: "dane/great",
     localImage: "/dogs/great-dane.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/dSaV-OCxy.jpg",
     description:
       "You're a Great Dane — a gentle giant with a heart as big as your presence. You might be imposing at first glance, but you're really just a softie who wants to be close to the people you love. You're calm, patient, and have a quiet confidence that puts everyone at ease.",
     traits: ["Gentle", "Patient", "Calm", "Affectionate", "Majestic"],
@@ -237,6 +247,7 @@ export const breeds = [
     name: "Australian Shepherd",
     apiBreed: "australian/shepherd",
     localImage: "/dogs/australian-shepherd.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/B1-llgq4m.jpg",
     description:
       "You're an Australian Shepherd — energetic, brilliant, and always looking for the next task to master. You thrive when you have a purpose and can get restless without one. You're incredibly versatile, equally at home leading a team project or going on a solo adventure.",
     traits: ["Versatile", "Smart", "Energetic", "Driven", "Loyal"],
@@ -247,6 +258,7 @@ export const breeds = [
     name: "Dachshund",
     apiBreed: "dachshund",
     localImage: "/dogs/dachshund.jpg",
+    fallbackImage: "https://cdn2.thedogapi.com/images/HJ7Pzg5EQ.jpg",
     description:
       "You're a Dachshund — brave, stubborn, and absolutely hilarious without trying. You have a personality ten times your size and you're not afraid to let everyone know it. You're fiercely independent but deeply devoted to your chosen people. You do things your way, always.",
     traits: ["Brave", "Stubborn", "Funny", "Devoted", "Independent"],

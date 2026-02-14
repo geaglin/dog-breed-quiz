@@ -3,7 +3,7 @@ import CockapooLogo from './CockapooLogo';
 
 export default function Result({ result, onRetake }) {
   const { breed, matchScore } = result;
-  const [imageUrl, setImageUrl] = useState(breed.localImage || null);
+  const [imageUrl, setImageUrl] = useState(breed.localImage || breed.fallbackImage || null);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [revealed, setRevealed] = useState(false);
 
@@ -11,19 +11,6 @@ export default function Result({ result, onRetake }) {
     const timer = setTimeout(() => setRevealed(true), 100);
     return () => clearTimeout(timer);
   }, []);
-
-  useEffect(() => {
-    fetch(`https://dog.ceo/api/breed/${breed.apiBreed}/images/random`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.status === 'success') {
-          setImageUrl(data.message);
-        }
-      })
-      .catch(() => {
-        // Local image is already set as fallback
-      });
-  }, [breed.apiBreed]);
 
   const handleRetake = () => {
     setRevealed(false);
@@ -46,6 +33,11 @@ export default function Result({ result, onRetake }) {
               alt={breed.name}
               className="breed-image"
               onLoad={() => setImageLoaded(true)}
+              onError={() => {
+                if (breed.fallbackImage && imageUrl !== breed.fallbackImage) {
+                  setImageUrl(breed.fallbackImage);
+                }
+              }}
             />
           </div>
         )}
